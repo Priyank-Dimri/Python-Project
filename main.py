@@ -1,10 +1,9 @@
 # Addition program for positive numbers using loop, conditions, functions and modules
 
+# Import image as module from image.py
 import image
 
 # Simple add function which return value as per user input
-
-
 def my_add(num1, num2):
     if (num1 or num2) < 1:
         return "Not Positive"
@@ -17,7 +16,7 @@ print(image.my_image)
 want_to_continue = 1
 print("Welcome to addition")
 
-# Using loop and conditional to check if the user want to continue or exit
+# Using loop, conditional and error handling to check for the user input and program continuation
 while want_to_continue == 1:
     try:
         number1 = int(input("Please input number 1: "))
